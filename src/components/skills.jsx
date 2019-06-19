@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Skills = () => {
+const Skills = () => (
     <div className="skills">
         <div className="skills-container">
             <div className="skills-items">
@@ -11,6 +11,6 @@ const Skills = () => {
             </div>
         </div>
     </div>
-};
+);
 
 export default Skills;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = () => {
+const About = () => (
     <div className="about">
         <div className="about-container">
             <div className="about-avatar">
@@ -22,6 +22,6 @@ const About = () => {
             </div>
         </div>
     </div>
-}
+);
 
 export default About;

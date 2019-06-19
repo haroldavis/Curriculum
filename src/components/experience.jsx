@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Experience = () => {
+const Experience = () => (
     <div className="experence">
         <div className="experience-container">
             <div className="experience-item">
@@ -9,6 +9,6 @@ const Experience = () => {
             </div>
         </div>
     </div>
-};
+);
 
 export default Experience;
