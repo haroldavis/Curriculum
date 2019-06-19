@@ -5,4 +5,5 @@ import About from './components/about';
 import Sidebar from './components/sidebar';
 
 
-ReactDOM.render(<Certificates />, document.getElementById('app'));
+
+ReactDOM.render(<App />, document.getElementById('app'));

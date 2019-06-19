@@ -9,8 +9,11 @@ import Experience from '../components/experience';
 import Certificates from '../components/certificates';
 import Skills from '../components/skills';
 import Social from '../components/social';
+import useGetDate from '../hooks/useGetDate';
 
 const App = () => {
+    const date = useGetDate();
+    console.log(date)
     return (
         <Main>
             <Sidebar>
