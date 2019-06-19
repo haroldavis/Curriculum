@@ -6,4 +6,6 @@ const Sidebar = ({ children }) => {
             {children}
         </div>
     </div>
-}
+};
+
+export default Sidebar;

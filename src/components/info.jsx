@@ -6,4 +6,6 @@ const Info = ({ children }) => {
             {children}
         </div>
     </div>
-}
+};
+
+export default Info;

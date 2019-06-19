@@ -19,4 +19,5 @@ npm install webpack webpack-cli html-webpack-plugin html-loader --save-dev
 # Installing webpack-server
  npm install webpack-dev-server --save-dev
 
-
+# run the server with --> npm start <--
+on the port : http://localhost:8080/ 

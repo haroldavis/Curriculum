@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Main from '../components/main';
 import Sidebar from '../components/sidebar';
 import Info from '../components/info';
@@ -9,7 +10,7 @@ import Certificates from '../components/certificates';
 import Skills from '../components/skills';
 import Social from '../components/social';
 
-const app = () => {
+const App = () => {
     return (
         <Main>
             <Sidebar>
@@ -19,7 +20,10 @@ const app = () => {
                 <Experience />
                 <Education />
                 <Certificates />
+                <Skills />
             </Info>
         </Main>
     );
 }
+
+export default App;
