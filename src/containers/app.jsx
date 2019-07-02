@@ -18,12 +18,12 @@ const App = () => {
         <Main>
             <Sidebar>
                 <About 
-                avatar={data.avatar}
-                name={data.name}
-                profession={data.profession}
-                bio={data.bio}
-                address={data.address}
-                social={data.social}
+                avatar={date.avatar}
+                name={date.name}
+                profession={date.profession}
+                bio={date.bio}
+                address={date.address}
+                social={date.social}
                 />
             </Sidebar>
             <Info>

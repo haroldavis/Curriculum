@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = ({avatar, name, profession, bio, address, social}) => (
+const About = ({ avatar, name, profession, bio, address, social }) => (
     <div className="about">
         <div className="about-container">
             <div className="about-avatar">
@@ -16,9 +16,9 @@ const About = ({avatar, name, profession, bio, address, social}) => (
             </div>
             <div className="about-description">
                 <p>{bio}</p>
+            </div>
             <div className="about-location">
                 <p>{address}</p>
-            </div>    
             </div>
             <div className="about-social">
                 
