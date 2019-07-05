@@ -14,8 +14,8 @@ import useGetDate from '../hooks/useGetDate';
 const App = () => {
     const date = useGetDate();
     console.log(date)
-    return (
-        <Main>
+    return date.length === 0 ? <h1>Cargando...</h1> : (
+        <Main> 
             <Sidebar>
                 <About 
                 avatar={date.avatar}
@@ -27,9 +27,15 @@ const App = () => {
                 />
             </Sidebar>
             <Info>
-                <Experience />
-                <Education />
-                <Certificates />
+                <Experience 
+                date={date.experience}
+                />
+                <Education 
+                date={date.education}
+                />
+                <Certificates 
+                date={date.certificate}
+                />
                 <Skills />
             </Info>
         </Main>

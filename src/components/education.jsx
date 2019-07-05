@@ -1,12 +1,16 @@
 import React from 'react';
 
-const Education = () => (
+const Education = props => (
     <div className="education">
         <div className="education-container">
-            <div className="Education-item">
-                <h2>CODIGO</h2>
-                <p>Fullstack</p>
-            </div>
+            {props.date.map((edu, index) => (
+                <div className="Education-item" key={`Edu-${index}`}>
+                    <h2>{edu.degree} {edu.institution}
+                        <span>{edu.starDate} - {edu.endDate}</span>
+                    </h2>
+                    <p>Fullstack</p>
+                </div>
+            ))}
         </div>
     </div>
 );
