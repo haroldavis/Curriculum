@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Social from './social';
 const About = ({ avatar, name, profession, bio, address, social }) => (
     <div className="about">
         <div className="about-container">
@@ -21,6 +21,7 @@ const About = ({ avatar, name, profession, bio, address, social }) => (
                 <p>{address}</p>
             </div>
             <div className="about-social">
+            <Social social={social} />
                 
             </div>
         </div>

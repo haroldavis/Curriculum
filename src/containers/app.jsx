@@ -36,7 +36,9 @@ const App = () => {
                 <Certificates 
                 date={date.certificate}
                 />
-                <Skills />
+                <Skills
+                date={date.skills} />
+                
             </Info>
         </Main>
     );
