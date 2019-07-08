@@ -18,5 +18,5 @@ deploy:
   target-branch: master
   commit_change: "Deploy release ${TRAVIS_TAG}"
   on: 
-    branch: develop
+    branch: development
 
