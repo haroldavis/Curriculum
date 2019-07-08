@@ -32,6 +32,7 @@ module.exports = {
             template: "./public/index.html",
             file: "./index.html"
         }),
-        new FaviconsWebpackPlugin('./public/react.png')
+        new FaviconsWebpackPlugin({
+            logo: './public/react.png'})
     ]
 }

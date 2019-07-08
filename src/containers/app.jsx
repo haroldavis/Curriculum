@@ -27,30 +27,31 @@ const App = () => {
 
         <Main>
             <GlobalStyle />
-                <Sidebar>
-                    <About
-                        avatar={date.avatar}
-                        name={date.name}
-                        profession={date.profession}
-                        bio={date.bio}
-                        address={date.address}
-                        social={date.social}
-                    />
-                </Sidebar>
-                <Info>
-                    <Experience
-                        date={date.experience}
-                    />
-                    <Education
-                        date={date.education}
-                    />
-                    <Certificates
-                        date={date.certificate}
-                    />
-                    <Skills
-                        date={date.skills} />
+            <Sidebar>
+                <About
+                    avatar={date.avatar}
+                    name={date.name}
+                    profession={date.profession}
+                    bio={date.bio}
+                    address={date.address}
+                    social={date.social}
+                />
+            </Sidebar>
+            <Info>
+                <Education
+                    date={date.education}
+                />
+                <Experience
+                    date={date.experience}
+                />
 
-                </Info>            
+                <Certificates
+                    date={date.certificate}
+                />
+                <Skills
+                    date={date.skills} />
+
+            </Info>
         </Main>
 
     );

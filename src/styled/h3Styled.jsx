@@ -7,6 +7,6 @@ font-weight: 400;
 margin: .5em 0; 
 `;
 
-const H3Styled = ({ name }) => <StyledH3>{name}</StyledH3>
+const H3Styled = ({ children }) => <StyledH3>{children}</StyledH3>
 
 export default H3Styled;
