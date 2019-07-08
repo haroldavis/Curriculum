@@ -7,14 +7,14 @@ import PStyled from '../styled/PStyled';
 const Experience = props => (
     <div className="experience">
         <H2Styled name="Experience" />
-            {props.date.map((exp, index) => (
-                <div className="experience-item" key={`Cer-${index}`}>
-                    <H3Styled>{exp.jobTitle} @ {exp.company} /  
+        {props.date.map((exp, index) => (
+            <div className="experience-item" key={`Cer-${index}`}>
+                <H3Styled>{exp.jobTitle} @ {exp.company} /
                     <span>{exp.startDate} - {exp.endDate}</span>
-                    </H3Styled>
-                    <PStyled name={exp.jobDescription} />
-                </div>
-            ))}        
+                </H3Styled>
+                <PStyled name={exp.jobDescription} />
+            </div>
+        ))}
     </div>
 );
 
