@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider, css } from 'styled-components';
 
 
 const SocialStyles = styled.div`
@@ -55,15 +55,15 @@ const Social = props => (
     <SocialStyles>
         {props.social &&
             <SocialUl>
-                {props.social.map((item, index) => (
-                    <SocialLi key={`Social-${index}`} target="_blank">
-                        <SocialAnchor href={item.url}>
+                {props.social.map((item, index) => 
+                    <SocialLi key={`Social-${index}`} >
+                        <SocialAnchor href={item.url} target="_blank">
                             <ThemeProvider theme={getColor(item.name)}>
                                 <SocialIcon className={`fa fa-${item.name}`} />
                             </ThemeProvider>
                         </SocialAnchor>
                     </SocialLi>
-                ))}
+                )}
             </SocialUl>
         }
     </SocialStyles>
