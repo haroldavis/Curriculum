@@ -33,6 +33,18 @@ module.exports = {
             file: "./index.html"
         }),
         new FaviconsWebpackPlugin({
-            logo: './public/react.png'})
+            logo: './public/react.png',
+            prefix: 'assets/',
+            inject: true,
+            background: '#fff',
+            title: 'React CV',
+            icons: {
+            android: true,
+            appleIcon: true,
+            favicons: true,
+            opengraph: false,
+            twitter: false,
+            }
+        })
     ]
 }
