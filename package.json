@@ -12,8 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/haroldavis/Curriculum.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "hooks",
+    "javascript"
+  ],
+  "author": "Harold Carhuancho",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/haroldavis/Curriculum/issues"
