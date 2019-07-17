@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-const api = 'https://us-central1-datedavis.cloudfunctions.net/api'
 
-const useGetDate = () => {
+
+const useGetDate = (url) => {
     const [mydata, setData] = useState([]);
 
     useEffect(() => {
-        fetch(api)
+        fetch(url)
             .then(response => response.json())
             .then(data => setData(data))
     }, []);

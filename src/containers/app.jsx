@@ -10,6 +10,8 @@ import Experience from '../components/experience';
 import Certificates from '../components/certificates';
 import Skills from '../components/skills';
 import useGetDate from '../hooks/useGetDate';
+const api = 'https://us-central1-datedavis.cloudfunctions.net/api'
+
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -21,7 +23,7 @@ body {
 `;
 
 const App = () => {
-    const date = useGetDate();
+    const date = useGetDate(api);
     console.log(date)
     return date.length === 0 ? <h1>Cargando...</h1> : (
 
@@ -38,23 +40,13 @@ const App = () => {
                 />
             </Sidebar>
             <Info>
-                <Education
-                    date={date.education}
-                />
-                <Experience
-                    date={date.experience}
-                />
-
-                <Certificates
-                    date={date.certificate}
-                />
-                <Skills
-                    date={date.skills} />
-
+                <Education date={date.education} />
+                <Experience date={date.experience} />
+                <Certificates date={date.certificate} />
+                <Skills date={date.skills} />
             </Info>
         </Main>
-
-    );
-}
+    )
+};
 
 export default App;
