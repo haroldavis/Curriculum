@@ -8,15 +8,17 @@ git:
   depth: 3
 script:
   - yarn build
-  - echo 'url-personaliza.com' > public/CNAME
+  - echo 'cv.HaroldCarhuancho.dev' > public/CNAME
 deploy:
+  name: harold@vis
   provider: pages
   skip-cleanup: true
   keep-history: true
   github-token: $github_token
   local-dir: dist/
   target-branch: master
-  commit_change: "Deploy release ${TRAVIS_TAG}"
+  commit_change: "harold@vis - Deploy release ${TRAVIS_TAG}"
+  fqdn: cv.HaroldCarhuancho.dev
   on: 
     branch: development
 
