@@ -1,11 +1,13 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import H2Styled from '../styled/H2Styled';
 
 const SkillsContainer = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-gap: 2rem;
 grid-row-gap: 0.5em;
+margin: .8em 0;
 `;
 
 const SkillsH5 = styled.h5`
@@ -50,6 +52,7 @@ box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0
 
 const Skills = props => (
     <div className="skills">
+        <H2Styled name="Skills" />
         <SkillsContainer>
             {props.date.map((skill, index) => (
                 <div className="skills-items" key={`Skills-${index}`}>

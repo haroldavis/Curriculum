@@ -12,8 +12,8 @@ padding: 2em 0 0;
 
 const AboutImg = styled.img`
 border-radius: 100%;
-width: 160px;
-border: 2px solid #E91E63;
+width: 180px;
+border: 2px solid #6E8591;
 margin: 0 auto;
 display: block;
 box-shadow: 0 0 10px rgba(0,0,0,0.6);
@@ -25,17 +25,18 @@ text-align: center;
 
 const H2 = styled.div`
 font-family: 'Roboto', sans-serif;
-font-weigth: 400;
+font-weigth: 700;
 letter-spacing: 1.2 px;
+font-size: 20px;
 margin: .5em 0 0 0;
-color: #C2185B;
+color: #165578;
 `;
 
 const AboutProfession = styled.div`
 margin: .2em 0 1em 0;
 letter-spacing: 1.6px;
 font-weigth: 300;
-color: #C2185B;
+color: #165578;
 `;
 
 const AboutBio = styled.div`
