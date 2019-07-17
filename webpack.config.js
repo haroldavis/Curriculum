@@ -30,7 +30,7 @@ module.exports = {
     plugins: [
         new HtmlWebPackPlugin({
             template: "./public/index.html",
-            file: "./index.html"
+            filename: "./index.html"
         }),
         new FaviconsWebpackPlugin({
             logo: './public/react.png',
