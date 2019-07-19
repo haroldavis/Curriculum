@@ -4,7 +4,7 @@
   "description": "Curriculum Project",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/haroldavis/Curriculum#readme",
   "dependencies": {
-    "jest": "^24.8.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.3.2"
