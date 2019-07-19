@@ -6,12 +6,11 @@ import Sidebar from '../components/sidebar';
 import Info from '../components/info';
 import About from '../components/about';
 import Education from '../components/education';
-import Experience from '../components/experience';
+import Competences from '../components/competences';
 import Certificates from '../components/certificates';
-import Skills from '../components/skills';
+import Activity from '../components/activity';
 import useGetDate from '../hooks/useGetDate';
-const api = 'https://us-central1-datedavis.cloudfunctions.net/api'
-
+const api = 'https://us-central1-cvharold-627d6.cloudfunctions.net/api'
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -41,9 +40,9 @@ const App = () => {
             </Sidebar>
             <Info>
                 <Education date={date.education} />
-                <Experience date={date.experience} />
                 <Certificates date={date.certificate} />
-                <Skills date={date.skills} />
+                <Competences date={date.competences} />                
+                <Activity date={date.activity} />
             </Info>
         </Main>
     )

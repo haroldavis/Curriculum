@@ -49,7 +49,7 @@ color: purple;
 const AboutLocation = styled.div`
 margin: .2em 0 1em 0;
 letter-spacing: 1.4px;
-color: red;
+color: #165578;
 `;
 
 
